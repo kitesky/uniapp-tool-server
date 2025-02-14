@@ -51,19 +51,24 @@
 1. 启动HTTP服务
 
 ```
+# 使用 air 热重载
 $ air
+
+# CMD命令
+$ 目录/main http
 ```
+
 
 2. 启动队列服务
 
 ```
-目录/main asynq
+$ 目录/main asynq
 ```
 
 2. 启动Cron定时任务
 
 ```
-目录/main cron
+$ 目录/main cron
 ```
 
 ### 使用说明
