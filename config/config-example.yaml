@@ -1,0 +1,33 @@
+app:
+  name: 19981.com
+  host: 127.0.0.1
+  port: 3000
+  mode: "debug"  # debug or release
+  url: http://127.0.0.1:3000
+  asset-url: http://127.0.0.1:3000
+database:
+  host: 127.0.0.1
+  port: 3306
+  user: root
+  password: ""
+  database: ""
+  prefix: ""
+  max-idle-conns: 10
+  max-open-conns: 500
+redis:
+  addr: "127.0.0.1"
+  port: 6379
+  password: ""
+  db: 0
+wechat:
+  appid: "wx1234567890"
+  mch_id: ""
+  serial_no: ""
+  api_v3_key: ""
+  apiclient_key_content: ""
+alipay:
+  appid: "2021000122672388"
+  private_key: ""
+  app_public_cert_content: ""
+  alipay_root_cert_content: ""
+  alipay_public_cert_content: ""
