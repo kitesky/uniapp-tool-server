@@ -6,6 +6,7 @@ type Config struct {
 	Database  Database  `mapstructure:"database" yaml:"database"`
 	WechatPay WechatPay `mapstructure:"wechat-pay" yaml:"wechat-pay"`
 	Alipay    Alipay    `mapstructure:"alipay" yaml:"alipay"`
+	DeepSeek  DeepSeek  `mapstructure:"deepseek" yaml:"deepseek"`
 }
 
 // APP配置
@@ -53,4 +54,10 @@ type Alipay struct {
 	AppPublicCertContent    string `mapstructure:"app_public_cert_content" yaml:"app_public_cert_content"`
 	AlipayRootCertContent   string `mapstructure:"alipay_root_cert_content" yaml:"alipay_root_cert_content"`
 	AlipayPublicCertContent string `mapstructure:"appid" yaml:"alipay_public_cert_content"`
+}
+
+// DeepSeek
+type DeepSeek struct {
+	DeepSeekApiKey  string `mapstructure:"deepseek_api_key" yaml:"deepseek_api_key"`
+	DeepSeekBaseUrl string `mapstructure:"deepseek_base_url" yaml:"deepseek_base_url"`
 }

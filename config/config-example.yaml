@@ -31,3 +31,6 @@ alipay:
   app_public_cert_content: ""
   alipay_root_cert_content: ""
   alipay_public_cert_content: ""
+deepseek:
+  deepseek_api_key: ""
+  deepseek_base_url: ""
