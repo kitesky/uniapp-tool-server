@@ -26,7 +26,9 @@ type AppTool struct {
 	Price       float64   `gorm:"column:price;type:decimal(10,2);default:0.00;comment:价格" json:"price"`      // 价格
 	MarketPrice float64   `gorm:"column:market_price;type:decimal(10,2);default:0.00;comment:价格" json:"market_price"`      // 市场价格
 	Recommend   string    `gorm:"column:recommend;type:text;comment:详情" json:"recommend"`                        // 是否推荐
-	Code        string    `gorm:"column:code;type:text;comment:工具标识代码" json:"code"`                        // 工具标识代码
+	Code        string    `gorm:"column:code;type:text;comment:工具标识代码" json:"code"` 
+	Message     string    `gorm:"column:message;type:char(255);comment:消息格式" json:"message"`                 // 消息格式
+	FormSchemas string    `gorm:"column:form_schemas;type:text;comment:表单json格式" json:"form_schemas"`        // 表单json格式
 	CreatedAt   time.Time `gorm:"column:created_at;type:timestamp;comment:创建时间" json:"created_at"`           // 创建时间
 	UpdatedAt   time.Time `gorm:"column:updated_at;type:timestamp;comment:更新时间" json:"updated_at"`           // 更新时间
 }

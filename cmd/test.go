@@ -14,5 +14,6 @@ var testCmd = &cobra.Command{
 		var cacheKeys = cache.GetAdKeys("home-left-1")
 		res := cache.Set(cacheKeys.Key, "test", cacheKeys.TTL)
 		fmt.Printf("输出内容%v", res)
+		fmt.Println("测试命令执行成功")
 	},
 }

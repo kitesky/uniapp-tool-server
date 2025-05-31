@@ -9,7 +9,7 @@ tmp_dir = "tmp"
 # Just plain old shell command. You could use `make` as well.
 cmd = "go build -o ./tmp/main.exe ."
 # Binary file yields from `cmd`.
-bin = "tmp\\main.exe http"
+bin = "tmp\\main.exe"
 # Customize binary.
 full_bin = ""
 # Watch these filename extensions.
